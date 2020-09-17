@@ -1,0 +1,269 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.1.17+ (vagrant@vagrant-ubuntu-trusty-64) (gcc version 5.3.0 (GCC) ) #1 Thu Feb 18 01:05:21 UTC 2016
+[    0.000000] CPU: ARMv7 Processor [412fc0f1] revision 1 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine model: linux,dummy-virt
+[    0.000000] debug: ignoring loglevel setting.
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c061dfe8, node_mem_map cfdf9000
+[    0.000000]   Normal zone: 512 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65536 pages, LIFO batch:15
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: firmadyne.syscall=1 root=/dev/vda1 console=ttyS0 nandsim.parts=64,64,64,64,64,64,64,64,64,64 rdinit=/firmadyne/preInit.sh rw debug ignore_loglevel print-fatal-signals=1 user_debug=31
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 253344K/262144K available (4297K kernel code, 170K rwdata, 1584K rodata, 180K init, 148K bss, 8800K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+[    0.000000]     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc05c67bc   (5882 kB)
+[    0.000000]       .init : 0xc05c7000 - 0xc05f4000   ( 180 kB)
+[    0.000000]       .data : 0xc05f4000 - 0xc061e840   ( 171 kB)
+[    0.000000]        .bss : 0xc0621000 - 0xc06462d4   ( 149 kB)
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Architected cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000128] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.000230] Switching to timer-based delay loop, resolution 16ns
+[    0.002765] Console: colour dummy device 80x30
+[    0.003026] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.003128] pid_max: default: 32768 minimum: 301
+[    0.003871] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.003901] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.011426] CPU: Testing write buffer coherency: ok
+[    0.016440] Setting up static identity map for 0x40008240 - 0x40008298
+[    0.028707] VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+[    0.038778] clocksource jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.046314] NET: Registered protocol family 16
+[    0.048857] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.052054] cpuidle: using governor ladder
+[    0.052178] cpuidle: using governor menu
+[    0.055304] genirq: Setting trigger mode 1 for irq 20 failed (gic_set_type+0x0/0x48)
+[    0.056796] genirq: Setting trigger mode 1 for irq 21 failed (gic_set_type+0x0/0x48)
+[    0.057066] genirq: Setting trigger mode 1 for irq 22 failed (gic_set_type+0x0/0x48)
+[    0.057329] genirq: Setting trigger mode 1 for irq 23 failed (gic_set_type+0x0/0x48)
+[    0.057611] genirq: Setting trigger mode 1 for irq 24 failed (gic_set_type+0x0/0x48)
+[    0.057868] genirq: Setting trigger mode 1 for irq 25 failed (gic_set_type+0x0/0x48)
+[    0.058106] genirq: Setting trigger mode 1 for irq 26 failed (gic_set_type+0x0/0x48)
+[    0.058347] genirq: Setting trigger mode 1 for irq 27 failed (gic_set_type+0x0/0x48)
+[    0.058698] genirq: Setting trigger mode 1 for irq 28 failed (gic_set_type+0x0/0x48)
+[    0.058956] genirq: Setting trigger mode 1 for irq 29 failed (gic_set_type+0x0/0x48)
+[    0.059191] genirq: Setting trigger mode 1 for irq 30 failed (gic_set_type+0x0/0x48)
+[    0.059441] genirq: Setting trigger mode 1 for irq 31 failed (gic_set_type+0x0/0x48)
+[    0.059690] genirq: Setting trigger mode 1 for irq 32 failed (gic_set_type+0x0/0x48)
+[    0.059934] genirq: Setting trigger mode 1 for irq 33 failed (gic_set_type+0x0/0x48)
+[    0.060164] genirq: Setting trigger mode 1 for irq 34 failed (gic_set_type+0x0/0x48)
+[    0.060417] genirq: Setting trigger mode 1 for irq 35 failed (gic_set_type+0x0/0x48)
+[    0.060672] genirq: Setting trigger mode 1 for irq 36 failed (gic_set_type+0x0/0x48)
+[    0.060941] genirq: Setting trigger mode 1 for irq 37 failed (gic_set_type+0x0/0x48)
+[    0.061226] genirq: Setting trigger mode 1 for irq 38 failed (gic_set_type+0x0/0x48)
+[    0.061475] genirq: Setting trigger mode 1 for irq 39 failed (gic_set_type+0x0/0x48)
+[    0.061731] genirq: Setting trigger mode 1 for irq 40 failed (gic_set_type+0x0/0x48)
+[    0.061981] genirq: Setting trigger mode 1 for irq 41 failed (gic_set_type+0x0/0x48)
+[    0.062233] genirq: Setting trigger mode 1 for irq 42 failed (gic_set_type+0x0/0x48)
+[    0.062484] genirq: Setting trigger mode 1 for irq 43 failed (gic_set_type+0x0/0x48)
+[    0.062757] genirq: Setting trigger mode 1 for irq 44 failed (gic_set_type+0x0/0x48)
+[    0.063020] genirq: Setting trigger mode 1 for irq 45 failed (gic_set_type+0x0/0x48)
+[    0.063482] genirq: Setting trigger mode 1 for irq 46 failed (gic_set_type+0x0/0x48)
+[    0.063796] genirq: Setting trigger mode 1 for irq 47 failed (gic_set_type+0x0/0x48)
+[    0.064058] genirq: Setting trigger mode 1 for irq 48 failed (gic_set_type+0x0/0x48)
+[    0.064304] genirq: Setting trigger mode 1 for irq 49 failed (gic_set_type+0x0/0x48)
+[    0.064566] genirq: Setting trigger mode 1 for irq 50 failed (gic_set_type+0x0/0x48)
+[    0.064844] genirq: Setting trigger mode 1 for irq 51 failed (gic_set_type+0x0/0x48)
+[    0.065264] genirq: Setting trigger mode 1 for irq 52 failed (gic_set_type+0x0/0x48)
+[    0.068295] Serial: AMBA PL011 UART driver
+[    0.069999] 9000000.pl011: ttyS0 at MMIO 0x9000000 (irq = 52, base_baud = 0) is a PL011 rev1
+[    0.091805] console [ttyS0] enabled
+[    0.111389] vgaarb: loaded
+[    0.112607] SCSI subsystem initialized
+[    0.113502] usbcore: registered new interface driver usbfs
+[    0.113870] usbcore: registered new interface driver hub
+[    0.114220] usbcore: registered new device driver usb
+[    0.121750] cfg80211: Calling CRDA to update world regulatory domain
+[    0.123731] Switched to clocksource arch_sys_counter
+[    0.138426] NET: Registered protocol family 2
+[    0.142455] TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.142810] TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.143187] TCP: Hash tables configured (established 2048 bind 2048)
+[    0.144008] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.144323] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.145597] NET: Registered protocol family 1
+[    0.146037] PCI: CLS 0 bytes, default 64
+[    0.151872] NetWinder Floating Point Emulator V0.97 (extended precision)
+[    0.154329] futex hash table entries: 256 (order: -1, 3072 bytes)
+[    0.158769] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.159716] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.160510] romfs: ROMFS MTD (C) 2007 Red Hat, Inc.
+[    0.167897] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.168290] io scheduler noop registered
+[    0.168567] io scheduler cfq registered (default)
+[    0.169220] firmadyne: devfs: 1, execute: 1, procfs: 1, syscall: 1
+[    0.170396] ------------[ cut here ]------------
+[    0.170600] WARNING: CPU: 0 PID: 1 at /home/vagrant/firmadyne-kernel/kernel-v4.1/fs/sysfs/dir.c:31 sysfs_warn_dup+0x50/0x6c()
+[    0.170997] sysfs: cannot create duplicate filename '/class/gpio'
+[    0.171249] Modules linked in:
+[    0.171558] CPU: 0 PID: 1 Comm: swapper Not tainted 4.1.17+ #1
+[    0.171777] Hardware name: Generic DT based system
+[    0.172471] [<c001c99c>] (unwind_backtrace) from [<c0019d30>] (show_stack+0x10/0x14)
+[    0.172851] [<c0019d30>] (show_stack) from [<c0024ab4>] (warn_slowpath_common+0x80/0xa8)
+[    0.173168] [<c0024ab4>] (warn_slowpath_common) from [<c0024b08>] (warn_slowpath_fmt+0x2c/0x3c)
+[    0.173763] [<c0024b08>] (warn_slowpath_fmt) from [<c00e363c>] (sysfs_warn_dup+0x50/0x6c)
+[    0.174067] [<c00e363c>] (sysfs_warn_dup) from [<c00e3714>] (sysfs_create_dir_ns+0x74/0x84)
+[    0.174382] [<c00e3714>] (sysfs_create_dir_ns) from [<c018e6ac>] (kobject_add_internal+0xb8/0x2ac)
+[    0.174709] [<c018e6ac>] (kobject_add_internal) from [<c018e9a8>] (kset_register+0x1c/0x44)
+[    0.175016] [<c018e9a8>] (kset_register) from [<c02090b4>] (__class_register+0xa8/0x198)
+[    0.175320] [<c02090b4>] (__class_register) from [<c02091e4>] (__class_create+0x40/0x70)
+[    0.175618] [<c02091e4>] (__class_create) from [<c01adf68>] (register_devfs_stubs+0x314/0xbb4)
+[    0.175935] [<c01adf68>] (register_devfs_stubs) from [<c05d9b08>] (init_module+0x28/0xa4)
+[    0.176263] [<c05d9b08>] (init_module) from [<c0009670>] (do_one_initcall+0x104/0x1b4)
+[    0.176581] [<c0009670>] (do_one_initcall) from [<c05c7d08>] (kernel_init_freeable+0xf0/0x1b0)
+[    0.176910] [<c05c7d08>] (kernel_init_freeable) from [<c040f28c>] (kernel_init+0x8/0xe4)
+[    0.177205] [<c040f28c>] (kernel_init) from [<c0016da8>] (ret_from_fork+0x14/0x2c)
+[    0.177551] ---[ end trace 59ca98c4d01176f2 ]---
+[    0.177795] ------------[ cut here ]------------
+[    0.177977] WARNING: CPU: 0 PID: 1 at /home/vagrant/firmadyne-kernel/kernel-v4.1/lib/kobject.c:240 kobject_add_internal+0x240/0x2ac()
+[    0.178396] kobject_add_internal failed for gpio with -EEXIST, don't try to register things with the same name in the same directory.
+[    0.178805] Modules linked in:
+[    0.178988] CPU: 0 PID: 1 Comm: swapper Tainted: G        W       4.1.17+ #1
+[    0.179237] Hardware name: Generic DT based system
+[    0.179435] [<c001c99c>] (unwind_backtrace) from [<c0019d30>] (show_stack+0x10/0x14)
+[    0.179722] [<c0019d30>] (show_stack) from [<c0024ab4>] (warn_slowpath_common+0x80/0xa8)
+[    0.180022] [<c0024ab4>] (warn_slowpath_common) from [<c0024b08>] (warn_slowpath_fmt+0x2c/0x3c)
+[    0.180357] [<c0024b08>] (warn_slowpath_fmt) from [<c018e834>] (kobject_add_internal+0x240/0x2ac)
+[    0.180690] [<c018e834>] (kobject_add_internal) from [<c018e9a8>] (kset_register+0x1c/0x44)
+[    0.181005] [<c018e9a8>] (kset_register) from [<c02090b4>] (__class_register+0xa8/0x198)
+[    0.181300] [<c02090b4>] (__class_register) from [<c02091e4>] (__class_create+0x40/0x70)
+[    0.181603] [<c02091e4>] (__class_create) from [<c01adf68>] (register_devfs_stubs+0x314/0xbb4)
+[    0.181920] [<c01adf68>] (register_devfs_stubs) from [<c05d9b08>] (init_module+0x28/0xa4)
+[    0.182218] [<c05d9b08>] (init_module) from [<c0009670>] (do_one_initcall+0x104/0x1b4)
+[    0.182515] [<c0009670>] (do_one_initcall) from [<c05c7d08>] (kernel_init_freeable+0xf0/0x1b0)
+[    0.182828] [<c05c7d08>] (kernel_init_freeable) from [<c040f28c>] (kernel_init+0x8/0xe4)
+[    0.183120] [<c040f28c>] (kernel_init) from [<c0016da8>] (ret_from_fork+0x14/0x2c)
+[    0.183405] ---[ end trace 59ca98c4d01176f3 ]---
+[    0.183810] firmadyne: Cannot create device class: gpio!
+[    0.185276] firmadyne: Cannot register character device: watchdog, 0xa, 0x82!
+[    0.185569] firmadyne: Cannot register character device: wdt, 0xfd, 0x0!
+[    0.281114] Non-volatile memory driver v1.3
+[    0.300490] brd: module loaded
+[    0.308955] loop: module loaded
+[    0.317373]  vda: vda1
+[    0.321310] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.321675] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.322006] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.322343] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.322673] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.323004] [nandsim] warning: read_byte: unexpected data output cycle, state is STATE_READY return 0x0
+[    0.323750] nand: device found, Manufacturer ID: 0x98, Chip ID: 0x39
+[    0.324003] nand: Toshiba NAND 128MiB 1,8V 8-bit
+[    0.324196] nand: 128 MiB, SLC, erase size: 16 KiB, page size: 512, OOB size: 16
+[    0.325118] flash size: 128 MiB
+[    0.325258] page size: 512 bytes
+[    0.325388] OOB area size: 16 bytes
+[    0.325523] sector size: 16 KiB
+[    0.325646] pages number: 262144
+[    0.325770] pages per sector: 32
+[    0.325895] bus width: 8
+[    0.325996] bits in sector size: 14
+[    0.326130] bits in page size: 9
+[    0.326265] bits in OOB size: 4
+[    0.326395] flash size with OOB: 135168 KiB
+[    0.326556] page address bytes: 4
+[    0.326683] sector address bytes: 3
+[    0.326817] options: 0x42
+[    0.330539] Scanning device for bad blocks
+[    0.455245] Creating 11 MTD partitions on "NAND 128MiB 1,8V 8-bit":
+[    0.455729] 0x000000000000-0x000000100000 : "NAND simulator partition 0"
+[    0.458668] 0x000000100000-0x000000200000 : "NAND simulator partition 1"
+[    0.460031] 0x000000200000-0x000000300000 : "NAND simulator partition 2"
+[    0.461389] 0x000000300000-0x000000400000 : "NAND simulator partition 3"
+[    0.462701] 0x000000400000-0x000000500000 : "NAND simulator partition 4"
+[    0.464226] 0x000000500000-0x000000600000 : "NAND simulator partition 5"
+[    0.465633] 0x000000600000-0x000000700000 : "NAND simulator partition 6"
+[    0.466982] 0x000000700000-0x000000800000 : "NAND simulator partition 7"
+[    0.468441] 0x000000800000-0x000000900000 : "NAND simulator partition 8"
+[    0.469922] 0x000000900000-0x000000a00000 : "NAND simulator partition 9"
+[    0.471271] 0x000000a00000-0x000008000000 : "NAND simulator partition 10"
+[    0.475755] tun: Universal TUN/TAP device driver, 1.6
+[    0.475976] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.493940] PPP generic driver version 2.4.2
+[    0.494641] PPP BSD Compression module registered
+[    0.494865] PPP Deflate Compression module registered
+[    0.495138] PPP MPPE Compression module registered
+[    0.495352] NET: Registered protocol family 24
+[    0.495696] PPTP driver version 0.8.5
+[    0.496603] usbcore: registered new interface driver usb-storage
+[    0.498164] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.498695] usbcore: registered new interface driver usbhid
+[    0.498910] usbhid: USB HID core driver
+[    0.499353] Netfilter messages via NETLINK v0.30.
+[    0.499958] nf_conntrack version 0.5.0 (3958 buckets, 15832 max)
+[    0.501295] ctnetlink v0.93: registering with nfnetlink.
+[    0.502647] ipip: IPv4 over IPv4 tunneling driver
+[    0.504734] gre: GRE over IPv4 demultiplexor driver
+[    0.504975] ip_gre: GRE over IPv4 tunneling driver
+[    0.509118] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    0.510631] arp_tables: (C) 2002 David S. Miller
+[    0.511658] Initializing XFRM netlink socket
+[    0.512157] NET: Registered protocol family 10
+[    0.518277] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    0.519753] sit: IPv6 over IPv4 tunneling driver
+[    0.523132] NET: Registered protocol family 17
+[    0.523939] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+[    0.524493] Bridge firewalling registered
+[    0.524690] Ebtables v2.0 registered
+[    0.525731] 8021q: 802.1Q VLAN Support v1.8
+[    0.526335] Registering SWP/SWPB emulation handler
+[    0.528210] hctosys: unable to open rtc device (rtc0)
+[    0.543174] UDF-fs: warning (device vda1): udf_fill_super: No partition found (2)
+[    0.559201] UDF-fs: warning (device vda1): udf_fill_super: No partition found (2)
+[    0.559574] List of all partitions:
+[    0.559848] 0100            8192 ram0  (driver?)
+[    0.560061] 0101            8192 ram1  (driver?)
+[    0.560242] 0102            8192 ram2  (driver?)
+[    0.560437] 0103            8192 ram3  (driver?)
+[    0.560623] 0104            8192 ram4  (driver?)
+[    0.560815] 0105            8192 ram5  (driver?)
+[    0.560993] 0106            8192 ram6  (driver?)
+[    0.561171] 0107            8192 ram7  (driver?)
+[    0.561348] 0108            8192 ram8  (driver?)
+[    0.561526] 0109            8192 ram9  (driver?)
+[    0.561709] 010a            8192 ram10  (driver?)
+[    0.561890] 010b            8192 ram11  (driver?)
+[    0.562072] 010c            8192 ram12  (driver?)
+[    0.562253] 010d            8192 ram13  (driver?)
+[    0.562434] 010e            8192 ram14  (driver?)
+[    0.562622] 010f            8192 ram15  (driver?)
+[    0.562808] fe00         1048576 vda  driver: virtio_blk
+[    0.563029]   fe01         1047552 vda1 b1b273bc-01
+[    0.563221] 1f00            1024 mtdblock0  (driver?)
+[    0.563413] 1f01            1024 mtdblock1  (driver?)
+[    0.563812] 1f02            1024 mtdblock2  (driver?)
+[    0.564007] 1f03            1024 mtdblock3  (driver?)
+[    0.564204] 1f04            1024 mtdblock4  (driver?)
+[    0.564414] 1f05            1024 mtdblock5  (driver?)
+[    0.564617] 1f06            1024 mtdblock6  (driver?)
+[    0.564823] 1f07            1024 mtdblock7  (driver?)
+[    0.565015] 1f08            1024 mtdblock8  (driver?)
+[    0.565210] 1f09            1024 mtdblock9  (driver?)
+[    0.565405] 1f0a          120832 mtdblock10  (driver?)
+[    0.565625] No filesystem could mount root, tried:  ext3 ext2 ext4 cramfs squashfs vfat iso9660 romfs udf
+[    0.566173] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(254,1)
+[    0.566499] CPU: 0 PID: 1 Comm: swapper Tainted: G        W       4.1.17+ #1
+[    0.566755] Hardware name: Generic DT based system
+[    0.566971] [<c001c99c>] (unwind_backtrace) from [<c0019d30>] (show_stack+0x10/0x14)
+[    0.567262] [<c0019d30>] (show_stack) from [<c0410b78>] (panic+0x70/0x1c8)
+[    0.567529] [<c0410b78>] (panic) from [<c05c81bc>] (mount_block_root+0x268/0x2ac)
+[    0.567820] [<c05c81bc>] (mount_block_root) from [<c05c84a4>] (prepare_namespace+0x158/0x1ac)
+[    0.568137] [<c05c84a4>] (prepare_namespace) from [<c05c7d84>] (kernel_init_freeable+0x16c/0x1b0)
+[    0.568482] [<c05c7d84>] (kernel_init_freeable) from [<c040f28c>] (kernel_init+0x8/0xe4)
+[    0.568796] [<c040f28c>] (kernel_init) from [<c0016da8>] (ret_from_fork+0x14/0x2c)
+[    0.569249] ---[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(254,1)
